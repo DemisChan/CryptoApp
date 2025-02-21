@@ -1,1 +1,17 @@
+# Build files
 /build
+/out
+
+# Local configuration files (Android Studio)
+/.gradle
+/.idea/
+*.iml
+.DS_Store
+
+# APKs and other build outputs
+*.apk
+*.ap_
+*.aab
+
+# Gradle wrapper
+/gradle/wrapper/gradle-wrapper.jar
