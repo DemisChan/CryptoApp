@@ -1,0 +1,9 @@
+-No architecture in the project
+-data domain and presentation layer are all interconnected
+-Check CoreViewModel for mappers, loading data and layering issues
+-pojo naming classes
+-coinPriceInfo should be split in to 3 classes entity(business logic), dto(network transmitters), dbmodel(database use)
+-api service RxJAva should be replaced by coroutines
+-adapter notifyDataChange, kotlin synthetics remove add data binding or view binding
+-change formattedTime to mapper
+-onrotation add details screen next to the list of coins(change the second activity to fragment)
