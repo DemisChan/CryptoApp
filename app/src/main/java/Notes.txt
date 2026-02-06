@@ -6,4 +6,4 @@
 -api service RxJAva should be replaced by coroutines
 -adapter notifyDataChange, kotlin synthetics remove add data binding or view binding
 -change formattedTime to mapper
--onrotation add details screen next to the list of coins(change the second activity to fragment)
+-on rotation add details screen next to the list of coins(change the second activity to fragment)
