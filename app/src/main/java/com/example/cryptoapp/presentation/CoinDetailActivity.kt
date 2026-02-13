@@ -6,11 +6,8 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.cryptoapp.R
-import com.example.cryptoapp.data.network.ApiFactory.BASE_IMAGE_URL
-import com.example.cryptoapp.utils.convertTimestampToTime
 import com.squareup.picasso.Picasso
 
 
@@ -44,7 +41,7 @@ class CoinDetailActivity : AppCompatActivity() {
             tvLastUpdate.text = it.lastUpdate
             tvFromSymbol.text = it.fromSymbol
             tvToSymbol.text = it.toSymbol
-            Picasso.get().load(BASE_IMAGE_URL + it.imageUrl).into(ivLogoCoin)
+            Picasso.get().load(it.imageUrl).into(ivLogoCoin)
         }
     }
 
