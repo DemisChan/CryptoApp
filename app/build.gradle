@@ -23,6 +23,9 @@ android {
     kotlinOptions {
         jvmTarget = "21"
     }
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
     buildTypes {
         release {
             minifyEnabled false
