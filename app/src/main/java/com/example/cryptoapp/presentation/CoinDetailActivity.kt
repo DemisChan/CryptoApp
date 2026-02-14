@@ -4,9 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModelProvider
 import com.example.cryptoapp.databinding.ActivityCoinDetailBinding
-import com.squareup.picasso.Picasso
 
 
 class CoinDetailActivity : AppCompatActivity() {
@@ -23,7 +21,7 @@ class CoinDetailActivity : AppCompatActivity() {
             return
         }
         val fromSymbol = intent.getStringExtra(EXTRA_FROM_SYMBOL) ?: EMPTY_SYMBOL
-        if(savedInstanceState == null) {
+        if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
                 .replace(binding.fragmentContainer.id, CoinDetailFragment.newInstance(fromSymbol))
