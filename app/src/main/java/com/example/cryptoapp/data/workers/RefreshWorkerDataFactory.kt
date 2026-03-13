@@ -7,9 +7,10 @@ import androidx.work.WorkerParameters
 import com.example.cryptoapp.data.database.CoinInfoDao
 import com.example.cryptoapp.data.mapper.CoinMapper
 import com.example.cryptoapp.data.network.ApiService
+import javax.inject.Inject
 
 
-class RefreshWorkerDataFactory(
+class RefreshWorkerDataFactory @Inject constructor(
     private val mapper: CoinMapper,
     private val coinInfoDao: CoinInfoDao,
     private val apiService: ApiService
@@ -21,7 +22,7 @@ class RefreshWorkerDataFactory(
     ): ListenableWorker? {
         return RefreshDataWorker(
             context = appContext,
-            workerParams= workerParameters,
+            workerParams = workerParameters,
             mapper = mapper,
             coinInfoDao = coinInfoDao,
             apiService = apiService,

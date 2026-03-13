@@ -1,6 +1,7 @@
 package com.example.cryptoapp.di
 
 import android.app.Application
+import com.example.cryptoapp.presentation.CoinApp
 import com.example.cryptoapp.presentation.CoinDetailFragment
 import com.example.cryptoapp.presentation.CoinPriceListActivity
 import dagger.BindsInstance
@@ -9,12 +10,15 @@ import javax.inject.Singleton
 
 
 @Singleton
+@ApplicationScope
 @Component(modules = [AppModule::class, DataModule::class, ViewModelModule::class])
 interface AppComponent {
 
     fun inject(activity: CoinPriceListActivity)
 
     fun inject(fragment: CoinDetailFragment)
+
+    fun inject(application: CoinApp)
 
 
     @Component.Factory
