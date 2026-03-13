@@ -11,7 +11,7 @@
     - Presentation Layer
 
 ### 2. POJO Class Structure
-- **Current:** Mixed responsibility in `coinPriceInfo` class
+- **Current:** Mixed responsibility in `coinInfoDto` class
 - **Plan:** Split into three distinct classes:
     - Entity class (for business logic)
     - DTO class (for network operations)
