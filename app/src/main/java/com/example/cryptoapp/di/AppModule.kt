@@ -16,8 +16,5 @@ object AppModule {
         return AppDatabase.getInstance(application)
     }
 
-    @Provides
-    fun provideCoinInfoDao(appDatabase: AppDatabase): CoinInfoDao {
-        return appDatabase.coinPriceInfoDao()
-    }
+
 }
