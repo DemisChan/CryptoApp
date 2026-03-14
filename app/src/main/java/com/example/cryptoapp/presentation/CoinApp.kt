@@ -2,7 +2,7 @@ package com.example.cryptoapp.presentation
 
 import android.app.Application
 import androidx.work.Configuration
-import com.example.cryptoapp.data.workers.RefreshWorkerDataFactory
+import com.example.cryptoapp.data.workers.WorkerDataFactory
 import com.example.cryptoapp.di.DaggerAppComponent
 import javax.inject.Inject
 
@@ -10,7 +10,7 @@ import javax.inject.Inject
 class CoinApp : Application(), Configuration.Provider {
 
     @Inject
-    lateinit var workerFactory: RefreshWorkerDataFactory
+    lateinit var workerFactory: WorkerDataFactory
 
 
     val component by lazy {

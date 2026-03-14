@@ -9,7 +9,6 @@ import com.example.cryptoapp.databinding.ActivityCoinPrceListBinding
 import com.example.cryptoapp.domain.CoinInfo
 import com.example.cryptoapp.presentation.adapters.CoinInfoAdapter
 import javax.inject.Inject
-import kotlin.getValue
 
 class CoinPriceListActivity : AppCompatActivity() {
 

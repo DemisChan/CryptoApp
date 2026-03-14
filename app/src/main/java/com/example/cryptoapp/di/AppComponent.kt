@@ -11,7 +11,7 @@ import javax.inject.Singleton
 
 @Singleton
 @ApplicationScope
-@Component(modules = [AppModule::class, DataModule::class, ViewModelModule::class])
+@Component(modules = [AppModule::class, DataModule::class, ViewModelModule::class, WorkerModule::class])
 interface AppComponent {
 
     fun inject(activity: CoinPriceListActivity)

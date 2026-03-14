@@ -1,6 +1,5 @@
 package com.example.cryptoapp.presentation
 
-import android.app.Activity
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,7 +10,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.cryptoapp.databinding.FragmentCoinDetailBinding
 import com.squareup.picasso.Picasso
 import javax.inject.Inject
-import kotlin.getValue
 
 
 class CoinDetailFragment : Fragment() {
